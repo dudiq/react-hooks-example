@@ -1,6 +1,10 @@
+import styles from './Button.module.css';
+
 const Button = ({ children, ...etc }) => {
   return (
-    <button {...etc}>{children}</button>
+    <button className={styles.button} {...etc}>
+      {children}
+    </button>
   );
 };
 
