@@ -1,9 +1,5 @@
-import { Link } from 'react-router-dom';
+import './Header.css';
 
-const Header = () => (
-  <div className="header">
-    <Link to="/">home</Link> | <Link to="/about">about</Link>
-  </div>
-);
+const Header = ({ children }) => <h3>{children}</h3>;
 
 export default Header;

@@ -1,0 +1,16 @@
+.input {
+
+}
+
+.input.is-error {
+
+}
+
+.input-error {
+  min-height: 14px;
+  font-size: 10px;
+}
+
+.input.is-error .input-error {
+  color: red;
+}

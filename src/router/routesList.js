@@ -8,6 +8,10 @@ const routesList = [
     path: '/about',
     component: () => import('./About'),
   },
+  {
+    path: '/signup',
+    component: () => import('./SignUpPage'),
+  },
 ];
 
 export { routesList };

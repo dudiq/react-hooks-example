@@ -1,5 +1,5 @@
 import Icon from '@/ui-kit/Icon';
-import Header from '@/ui-kit/Header';
+import Header from '@/ui-kit/AppHeader';
 import UserProfile from '@/modules/UserProfile';
 
 function About() {

@@ -1,4 +1,6 @@
-const delay = (ms = 2000) => {
+import userMocks from '@/services/mocks/userMocks';
+
+const delay = (ms = 1000) => {
   return new Promise(resolve => {
     setTimeout(resolve, ms);
   });
@@ -9,8 +11,12 @@ class Request {
     await delay();
   }
 
-  async post() {
-    await delay(1000);
+  async post(url, data) {
+    const mock = userMocks[url];
+    if (mock) {
+      await delay(500);
+      return mock(data);
+    }
   }
 
   async upload() {

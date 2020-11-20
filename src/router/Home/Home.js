@@ -1,5 +1,5 @@
 import './Home.css';
-import Header from '@/ui-kit/Header';
+import Header from '@/ui-kit/AppHeader';
 
 function Home() {
   return (

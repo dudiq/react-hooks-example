@@ -1,6 +1,6 @@
 import Button from '@/ui-kit/Button';
 import Loader from '@/ui-kit/Loader';
-import Input from '@/ui-kit/Input';
+import Input from '@/ui-kit/SNInput';
 import useUserProfile from './useUserProfile';
 
 const UserProfile = () => {

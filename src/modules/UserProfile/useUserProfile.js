@@ -7,9 +7,7 @@ const useUserProfile = () => {
   const [isLoading, updateLoading] = useState(false);
   const [fields, userStore] = useUniStore(UserStore);
 
-  const { value: firstName, bind: bindFirstName } = useInput(
-    fields.firstName,
-  );
+  const { value: firstName, bind: bindFirstName } = useInput(fields.firstName);
 
   const updateFirstName = useCallback(async () => {
     updateLoading(true);
